@@ -20,7 +20,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = "https://cocorporateapps.com/contacts.html"
     
     enum Paygate {
-        static let defaultLifetime = "train.lazyworkout.lifetime"
-        static let defaultMonthly = "train.lazyworkout.monthly"
+        static let defaultLifetime = "train.lazy.endless"
+        static let defaultMonthly = "train.lazy.monthly"
     }
 }
