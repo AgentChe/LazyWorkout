@@ -10,8 +10,6 @@
 		5D43744FE398F09BAA217C0C /* Pods_LazyWorkout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F57686B2A1A8C44FBDAFD3 /* Pods_LazyWorkout.framework */; };
 		DEA009782C2077DF002C1730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA009772C2077DF002C1730 /* Assets.xcassets */; };
 		DEA0097B2C2077DF002C1730 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DEA0097A2C2077DF002C1730 /* Base */; };
-		DEA00B3B2C20796A002C1730 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA009832C20796A002C1730 /* AmplitudeManager.swift */; };
-		DEA00B3C2C20796A002C1730 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA009842C20796A002C1730 /* BranchManager.swift */; };
 		DEA00B3D2C20796A002C1730 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA009852C20796A002C1730 /* FacebookManager.swift */; };
 		DEA00B3E2C20796A002C1730 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA009862C20796A002C1730 /* FirebaseManager.swift */; };
 		DEA00B3F2C20796A002C1730 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA009882C20796A002C1730 /* ImagePicker.swift */; };
@@ -338,8 +336,6 @@
 		DEA009772C2077DF002C1730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA0097A2C2077DF002C1730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA0097C2C2077DF002C1730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA009832C20796A002C1730 /* AmplitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DEA009842C20796A002C1730 /* BranchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DEA009852C20796A002C1730 /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		DEA009862C20796A002C1730 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DEA009882C20796A002C1730 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -722,8 +718,6 @@
 		DEA009872C20796A002C1730 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				DEA009832C20796A002C1730 /* AmplitudeManager.swift */,
-				DEA009842C20796A002C1730 /* BranchManager.swift */,
 				DEA009852C20796A002C1730 /* FacebookManager.swift */,
 				DEA009862C20796A002C1730 /* FirebaseManager.swift */,
 			);
@@ -2233,9 +2227,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LazyWorkout/Pods-LazyWorkout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LazyWorkout/Pods-LazyWorkout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2557,14 +2555,12 @@
 				DEA00B832C20796A002C1730 /* DTIHeaderCell.swift in Sources */,
 				DEA00B472C20796A002C1730 /* GradientView.swift in Sources */,
 				DEA00C632C20796B002C1730 /* GetWorkoutTemplateRequest.swift in Sources */,
-				DEA00B3B2C20796A002C1730 /* AmplitudeManager.swift in Sources */,
 				DEA00BB52C20796B002C1730 /* ODrillsView.swift in Sources */,
 				DEA00BFC2C20796B002C1730 /* WTFocusZonesCollectionCell.swift in Sources */,
 				DEA00BD12C20796B002C1730 /* ProfileEditGoalsView.swift in Sources */,
 				DEA00B732C20796A002C1730 /* DrillsViewController.swift in Sources */,
 				DEA00C3B2C20796B002C1730 /* GetPlanResponse.swift in Sources */,
 				DEA00B4A2C20796A002C1730 /* ScreenPreloader.swift in Sources */,
-				DEA00B3C2C20796A002C1730 /* BranchManager.swift in Sources */,
 				DEA00C642C20796B002C1730 /* GetWorkoutTemplateResponse.swift in Sources */,
 				DEA00C502C20796B002C1730 /* IAPManager.swift in Sources */,
 				DEA00BD72C20796B002C1730 /* ProfileCalendarView.swift in Sources */,
@@ -2729,7 +2725,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4W5848G5V3;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2744,7 +2740,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = train.lazy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2767,7 +2763,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4W5848G5V3;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2782,7 +2778,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = train.lazy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
